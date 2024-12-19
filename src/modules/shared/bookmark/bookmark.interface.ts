@@ -1,5 +1,5 @@
-import { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 import { BookmarkChangeType } from './bookmark.enum';
+import { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 
 export interface AddBookmarkChangeData {
   metadata: BookmarkMetadata;

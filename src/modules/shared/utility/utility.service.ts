@@ -1,11 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
 
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import { compare } from 'compare-versions';
-import * as detectBrowser from 'detect-browser';
-import XRegExp from 'xregexp';
 import { AppEventType, RoutePath } from '../../app/app.enum';
 import { ApiServiceType } from '../api/api.enum';
 import { ApiService, ApiServiceNames, ApiSyncInfo } from '../api/api.interface';
@@ -18,6 +12,12 @@ import { LogService } from '../log/log.service';
 import { NetworkService } from '../network/network.service';
 import { StoreKey } from '../store/store.enum';
 import { StoreService } from '../store/store.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import { compare } from 'compare-versions';
+import * as detectBrowser from 'detect-browser';
+import XRegExp from 'xregexp';
 
 @Injectable('UtilityService')
 export class UtilityService {

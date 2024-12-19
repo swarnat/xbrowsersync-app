@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import DOMPurify from 'dompurify';
-import { marked } from 'marked';
 import {
   BaseError,
   DailyNewSyncLimitReachedError,
@@ -39,6 +35,10 @@ import {
   ApiXbrowsersyncServiceInfoResponse,
   ApiXbrowsersyncSyncInfo
 } from './api-xbrowsersync.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import DOMPurify from 'dompurify';
+import { marked } from 'marked';
 
 @Injectable('ApiXbrowsersyncService')
 export class ApiXbrowsersyncService implements ApiService {

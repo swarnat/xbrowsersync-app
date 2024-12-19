@@ -1,5 +1,5 @@
-import { Injectable } from 'angular-ts-decorators';
 import { WebExtAppHelperService } from '../../../../webext-app/shared/webext-app-helper/webext-app-helper.service';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('AppHelperService')
 export class FirefoxAppHelperService extends WebExtAppHelperService {

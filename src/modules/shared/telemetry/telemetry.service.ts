@@ -1,4 +1,3 @@
-import { Injectable } from 'angular-ts-decorators';
 import { ApiSyncInfo } from '../api/api.interface';
 import { NetworkConnectionError } from '../errors/errors';
 import Globals from '../global-shared.constants';
@@ -11,6 +10,7 @@ import { StoreService } from '../store/store.service';
 import { SyncService } from '../sync/sync.service';
 import { UtilityService } from '../utility/utility.service';
 import { TelemetryPayload } from './telemetry.interface';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('TelemetryService')
 export class TelemetryService {

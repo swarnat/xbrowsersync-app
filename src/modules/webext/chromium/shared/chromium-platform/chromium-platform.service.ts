@@ -1,6 +1,6 @@
-import { Injectable } from 'angular-ts-decorators';
 import { BrowserName, PlatformType } from '../../../../shared/global-shared.enum';
 import { WebExtPlatformService } from '../../../shared/webext-platform/webext-platform.service';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('PlatformService')
 export class ChromiumPlatformService extends WebExtPlatformService {

@@ -1,9 +1,4 @@
 import '../../styles/styles.scss';
-import NgAnimate from 'angular-animate';
-import NgFilter from 'angular-filter';
-import NgSanitize from 'angular-sanitize';
-import { NgModule } from 'angular-ts-decorators';
-import NgInfiniteScroll from 'ng-infinite-scroll';
 import { ExceptionHandlerService } from '../shared/errors/exception-handler/exception-handler.service';
 import { GlobalSharedModule } from '../shared/global-shared.module';
 import { AppRoutesModule } from './app.routes';
@@ -20,6 +15,11 @@ import { AppTelemetryComponent } from './app-telemetry/app-telemetry.component';
 import { AppUpdatedComponent } from './app-updated/app-updated.component';
 import { IconComponent } from './shared/icon/icon.component';
 import { IconButtonComponent } from './shared/icon-button/icon-button.component';
+import NgAnimate from 'angular-animate';
+import NgFilter from 'angular-filter';
+import NgSanitize from 'angular-sanitize';
+import { NgModule } from 'angular-ts-decorators';
+import NgInfiniteScroll from 'ng-infinite-scroll';
 
 @NgModule({
   declarations: [

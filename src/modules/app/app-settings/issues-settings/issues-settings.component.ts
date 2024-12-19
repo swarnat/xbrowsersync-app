@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { PlatformService } from '../../../shared/global-shared.interface';
 import { LogLevel } from '../../../shared/log/log.enum';
 import { LogService } from '../../../shared/log/log.service';
@@ -8,6 +5,9 @@ import { TelemetryService } from '../../../shared/telemetry/telemetry.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { RoutePath } from '../../app.enum';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import angular from 'angular';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 import { BookmarkChangeType, BookmarkContainer, BookmarkType } from '../../../../shared/bookmark/bookmark.enum';
 import {
   AddNativeBookmarkChangeData,
@@ -20,6 +16,10 @@ import {
 import Globals from '../../../../shared/global-shared.constants';
 import { WebpageMetadata } from '../../../../shared/global-shared.interface';
 import { WebExtBookmarkService } from '../../../shared/webext-bookmark/webext-bookmark.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 
 @Injectable('BookmarkService')
 export class ChromiumBookmarkService extends WebExtBookmarkService {

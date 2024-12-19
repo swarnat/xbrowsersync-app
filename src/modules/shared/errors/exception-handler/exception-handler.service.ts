@@ -1,12 +1,12 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AlertType } from '../../alert/alert.enum';
 import { Alert } from '../../alert/alert.interface';
 import { AlertService } from '../../alert/alert.service';
 import { PlatformService } from '../../global-shared.interface';
 import { LogService } from '../../log/log.service';
 import * as Errors from '../errors';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Injectable('ExceptionHandler')
 export class ExceptionHandlerService {

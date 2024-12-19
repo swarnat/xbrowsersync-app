@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { OnDestroy, OnInit, ViewParent } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import { detect } from 'detect-browser';
 import { AlertType } from '../../../shared/alert/alert.enum';
 import { AlertService } from '../../../shared/alert/alert.service';
 import { Backup } from '../../../shared/backup-restore/backup-restore.interface';
@@ -21,6 +17,10 @@ import { WorkingService } from '../../../shared/working/working.service';
 import { AppEventType } from '../../app.enum';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
 import { AppSettingsComponent } from '../app-settings.component';
+import angular from 'angular';
+import { OnDestroy, OnInit, ViewParent } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import { detect } from 'detect-browser';
 
 export abstract class BackupRestoreSettingsComponent implements OnInit, OnDestroy {
   Strings = require('../../../../../res/strings/en.json');

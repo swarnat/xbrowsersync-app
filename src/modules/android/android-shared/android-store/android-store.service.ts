@@ -1,10 +1,10 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
 import { FailedLocalStorageError } from '../../../shared/errors/errors';
 import { StoreKey } from '../../../shared/store/store.enum';
 import { StoreContent, TraceLogItem } from '../../../shared/store/store.interface';
 import { StoreService } from '../../../shared/store/store.service';
 import { NativeStorageError, Table, TraceLogColumn } from './android-store.enum';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('StoreService')
 export class AndroidStoreService extends StoreService {

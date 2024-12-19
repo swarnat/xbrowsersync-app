@@ -1,6 +1,6 @@
-import { Injectable } from 'angular-ts-decorators';
 import { WorkingContext } from './working.enum';
 import { WorkingStatus } from './working.interface';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('WorkingService')
 export class WorkingService {

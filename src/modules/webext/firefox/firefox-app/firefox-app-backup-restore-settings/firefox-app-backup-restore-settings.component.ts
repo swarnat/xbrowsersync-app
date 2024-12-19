@@ -1,5 +1,5 @@
-import { Component } from 'angular-ts-decorators';
 import { WebExtAppBackupRestoreSettingsComponent } from '../../../webext-app/webext-app-backup-restore-settings/webext-app-backup-restore-settings.component';
+import { Component } from 'angular-ts-decorators';
 
 @Component({
   controllerAs: 'vm',

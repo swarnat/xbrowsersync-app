@@ -1,6 +1,6 @@
+import Globals from '../../global-shared.constants';
 import { IHttpInterceptor } from 'angular';
 import { Injectable } from 'angular-ts-decorators';
-import Globals from '../../global-shared.constants';
 
 @Injectable('ApiRequestInterceptorFactory')
 export class ApiRequestInterceptorFactory implements IHttpInterceptor {

@@ -1,5 +1,3 @@
-import angular from 'angular';
-import { Component } from 'angular-ts-decorators';
 import { AlertType } from '../../../shared/alert/alert.enum';
 import { AlertService } from '../../../shared/alert/alert.service';
 import { AndroidError } from '../../../shared/errors/errors';
@@ -7,6 +5,8 @@ import { ExceptionHandler } from '../../../shared/errors/errors.interface';
 import Globals from '../../../shared/global-shared.constants';
 import { AndroidPlatformService } from '../../android-shared/android-platform/android-platform.service';
 import { AndroidAlert } from '../android-app.interface';
+import angular from 'angular';
+import { Component } from 'angular-ts-decorators';
 
 @Component({
   selector: 'appAlert'

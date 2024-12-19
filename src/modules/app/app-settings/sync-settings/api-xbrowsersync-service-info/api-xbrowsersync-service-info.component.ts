@@ -1,4 +1,3 @@
-import { Component, OnInit } from 'angular-ts-decorators';
 import { ApiServiceStatus } from '../../../../shared/api/api.enum';
 import { ApiSyncInfo } from '../../../../shared/api/api.interface';
 import {
@@ -14,6 +13,7 @@ import { SyncService } from '../../../../shared/sync/sync.service';
 import { UtilityService } from '../../../../shared/utility/utility.service';
 import { AppEventType } from '../../../app.enum';
 import { AppHelperService } from '../../../shared/app-helper/app-helper.service';
+import { Component, OnInit } from 'angular-ts-decorators';
 
 @Component({
   controllerAs: 'vm',

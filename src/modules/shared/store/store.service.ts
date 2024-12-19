@@ -1,6 +1,6 @@
-import angular from 'angular';
 import { StoreKey } from './store.enum';
 import { StoreContent } from './store.interface';
+import angular from 'angular';
 
 export abstract class StoreService {
   $q: ng.IQService;

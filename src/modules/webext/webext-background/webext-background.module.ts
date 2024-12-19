@@ -1,11 +1,11 @@
-import angular from 'angular';
-import { NgModule } from 'angular-ts-decorators';
-import browser from 'webextension-polyfill';
 import { ExceptionHandlerService } from '../../shared/errors/exception-handler/exception-handler.service';
 import { GlobalSharedModule } from '../../shared/global-shared.module';
 import { WebExtSharedModule } from '../shared/webext-shared.module';
 import { WebExtBackgroundComponent } from './webext-background.component';
 import { WebExtBackgroundService } from './webext-background.service';
+import angular from 'angular';
+import { NgModule } from 'angular-ts-decorators';
+import browser from 'webextension-polyfill';
 
 @NgModule({
   declarations: [WebExtBackgroundComponent],

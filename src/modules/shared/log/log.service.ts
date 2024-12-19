@@ -1,11 +1,11 @@
-import { Injectable } from 'angular-ts-decorators';
-import stackTrace from 'stacktrace-js';
 import { BaseError } from '../errors/errors';
 import { StoreKey } from '../store/store.enum';
 import { TraceLogItem } from '../store/store.interface';
 import { StoreService } from '../store/store.service';
 import { LogLevel } from './log.enum';
 import { LogQueueItem } from './log.interface';
+import { Injectable } from 'angular-ts-decorators';
+import stackTrace from 'stacktrace-js';
 
 @Injectable('LogService')
 export class LogService {

@@ -1,11 +1,11 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import base64js from 'base64-js';
-import lzutf8 from 'lzutf8';
 import { ArgumentError, InvalidCredentialsError } from '../errors/errors';
 import { LogService } from '../log/log.service';
 import { StoreService } from '../store/store.service';
 import { UtilityService } from '../utility/utility.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import base64js from 'base64-js';
+import lzutf8 from 'lzutf8';
 
 @Injectable('CryptoService')
 export class CryptoService {

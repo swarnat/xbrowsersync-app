@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 import { BookmarkChangeType, BookmarkContainer } from '../../../../shared/bookmark/bookmark.enum';
 import {
   AddNativeBookmarkChangeData,
@@ -17,6 +14,9 @@ import {
 } from '../../../../shared/errors/errors';
 import { WebpageMetadata } from '../../../../shared/global-shared.interface';
 import { WebExtBookmarkService } from '../../../shared/webext-bookmark/webext-bookmark.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 
 @Injectable('BookmarkService')
 export class FirefoxBookmarkService extends WebExtBookmarkService {

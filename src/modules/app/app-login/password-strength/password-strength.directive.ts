@@ -1,8 +1,8 @@
+import { PlatformService } from '../../../shared/global-shared.interface';
 import { zxcvbn, zxcvbnOptions } from '@zxcvbn-ts/core';
 import zxcvbnLanguageCommon from '@zxcvbn-ts/language-common';
 import zxcvbnLanguageEn from '@zxcvbn-ts/language-en';
 import { Directive, Input, OnInit } from 'angular-ts-decorators';
-import { PlatformService } from '../../../shared/global-shared.interface';
 
 @Directive({
   bindToController: true,

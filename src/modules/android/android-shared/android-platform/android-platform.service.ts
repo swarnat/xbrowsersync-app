@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AppEventType } from '../../../app/app.enum';
 import { AlertService } from '../../../shared/alert/alert.service';
 import { BookmarkChangeType } from '../../../shared/bookmark/bookmark.enum';
@@ -31,6 +28,9 @@ import { SyncService } from '../../../shared/sync/sync.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingContext } from '../../../shared/working/working.enum';
 import { WorkingService } from '../../../shared/working/working.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Injectable('PlatformService')
 export class AndroidPlatformService implements PlatformService {

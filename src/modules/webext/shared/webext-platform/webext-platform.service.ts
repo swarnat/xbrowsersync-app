@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { boundMethod } from 'autobind-decorator';
-import * as detectBrowser from 'detect-browser';
-import browser, { Tabs } from 'webextension-polyfill';
 import { AlertService } from '../../../shared/alert/alert.service';
 import { BookmarkHelperService } from '../../../shared/bookmark/bookmark-helper/bookmark-helper.service';
 import {
@@ -21,8 +17,11 @@ import { Sync } from '../../../shared/sync/sync.interface';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingService } from '../../../shared/working/working.service';
 import { DownloadFileMessage, Message, SyncBookmarksMessage } from '../../webext.interface';
-import { WebExtBackgroundService } from '../../webext-background/webext-background.service';
 import { BookmarkIdMapperService } from '../bookmark-id-mapper/bookmark-id-mapper.service';
+import angular from 'angular';
+import { boundMethod } from 'autobind-decorator';
+import * as detectBrowser from 'detect-browser';
+import browser, { Tabs } from 'webextension-polyfill';
 
 export abstract class WebExtPlatformService implements PlatformService {
   Strings = require('../../../../../res/strings/en.json');
@@ -32,7 +31,6 @@ export abstract class WebExtPlatformService implements PlatformService {
   $q: ng.IQService;
   $timeout: ng.ITimeoutService;
   alertSvc: AlertService;
-  _backgroundSvc: WebExtBackgroundService | undefined;
   bookmarkIdMapperSvc: BookmarkIdMapperService;
   bookmarkHelperSvc: BookmarkHelperService;
   logSvc: LogService;
@@ -85,13 +83,6 @@ export abstract class WebExtPlatformService implements PlatformService {
     this.workingSvc = WorkingSvc;
   }
   platformName = '';
-
-  get backgroundSvc(): WebExtBackgroundService {
-    if (angular.isUndefined(this._backgroundSvc)) {
-      this._backgroundSvc = this.$injector.get('WebExtBackgroundService');
-    }
-    return this._backgroundSvc as WebExtBackgroundService;
-  }
 
   checkOptionalNativePermissions(): ng.IPromise<boolean> {
     // Check if extension has optional permissions
@@ -333,20 +324,8 @@ export abstract class WebExtPlatformService implements PlatformService {
   }
 
   sendMessage(message: Message): ng.IPromise<any> {
-    // If background module loaded use browser API to send the message
-    let module: ng.IModule | undefined;
-    try {
-      module = angular.module('WebExtBackgroundModule');
-    } catch (err) {}
-
-    let promise: ng.IPromise<any>;
-    if (angular.isUndefined(module)) {
-      promise = browser.runtime.sendMessage(message);
-    } else {
-      promise = this.backgroundSvc.onMessage(message);
-    }
-
-    return promise.catch((err: Error) => {
+    // Use browser.runtime.sendMessage to communicate with service worker
+    return browser.runtime.sendMessage(message).catch((err: Error) => {
       // Recreate the error object as webextension-polyfill wraps the object before returning it
       const error: BaseError = new (<any>Errors)[err.message]();
       error.logged = true;

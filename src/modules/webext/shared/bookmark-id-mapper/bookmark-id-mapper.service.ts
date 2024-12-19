@@ -1,8 +1,8 @@
-import { Injectable } from 'angular-ts-decorators';
 import { BookmarkMappingNotFoundError } from '../../../shared/errors/errors';
 import { StoreKey } from '../../../shared/store/store.enum';
 import { StoreService } from '../../../shared/store/store.service';
 import { BookmarkIdMapping } from './bookmark-id-mapper.interface';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('BookmarkIdMapperService')
 export class BookmarkIdMapperService {

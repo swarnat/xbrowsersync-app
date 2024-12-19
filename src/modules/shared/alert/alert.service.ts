@@ -1,5 +1,5 @@
-import { Injectable } from 'angular-ts-decorators';
 import { Alert } from './alert.interface';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('AlertService')
 export class AlertService {

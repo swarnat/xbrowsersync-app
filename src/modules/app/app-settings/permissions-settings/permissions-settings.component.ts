@@ -1,8 +1,8 @@
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { PlatformService } from '../../../shared/global-shared.interface';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

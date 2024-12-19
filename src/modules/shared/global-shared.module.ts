@@ -1,4 +1,3 @@
-import { NgModule } from 'angular-ts-decorators';
 import { AlertService } from './alert/alert.service';
 import { ApiRequestInterceptorFactory } from './api/api-request-interceptor/api-request-interceptor.factory';
 import { ApiXbrowsersyncService } from './api/api-xbrowsersync/api-xbrowsersync.service';
@@ -15,6 +14,7 @@ import { TelemetryService } from './telemetry/telemetry.service';
 import { UpgradeService } from './upgrade/upgrade.service';
 import { UtilityService } from './utility/utility.service';
 import { WorkingService } from './working/working.service';
+import { NgModule } from 'angular-ts-decorators';
 
 @NgModule({
   id: 'GlobalSharedModule',

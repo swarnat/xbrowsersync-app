@@ -1,5 +1,3 @@
-import { Injectable } from 'angular-ts-decorators';
-import browser from 'webextension-polyfill';
 import { ApiServiceType } from '../../../shared/api/api.enum';
 import { ApiXbrowsersyncSyncInfo } from '../../../shared/api/api-xbrowsersync/api-xbrowsersync.interface';
 import { BookmarkService } from '../../../shared/bookmark/bookmark.interface';
@@ -10,6 +8,8 @@ import { StoreKey } from '../../../shared/store/store.enum';
 import { StoreService } from '../../../shared/store/store.service';
 import { V160UpgradeProviderService } from '../../../shared/upgrade/v1.6.0-upgrade-provider/v1.6.0-upgrade-provider.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
+import { Injectable } from 'angular-ts-decorators';
+import browser from 'webextension-polyfill';
 
 @Injectable('V160UpgradeProviderService')
 export class WebExtV160UpgradeProviderService extends V160UpgradeProviderService {

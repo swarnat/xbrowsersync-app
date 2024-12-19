@@ -1,10 +1,10 @@
-import { Injectable } from 'angular-ts-decorators';
 import { ApiServiceType } from '../../../shared/api/api.enum';
 import { ApiXbrowsersyncSyncInfo } from '../../../shared/api/api-xbrowsersync/api-xbrowsersync.interface';
 import { FailedLocalStorageError } from '../../../shared/errors/errors';
 import Globals from '../../../shared/global-shared.constants';
 import { StoreKey } from '../../../shared/store/store.enum';
 import { V160UpgradeProviderService } from '../../../shared/upgrade/v1.6.0-upgrade-provider/v1.6.0-upgrade-provider.service';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('V160UpgradeProviderService')
 export class AndroidV160UpgradeProviderService extends V160UpgradeProviderService {

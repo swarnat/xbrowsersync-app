@@ -1,4 +1,3 @@
-import angular from 'angular';
 import { ExceptionHandler } from '../../../shared/errors/errors.interface';
 import Globals from '../../../shared/global-shared.constants';
 import { PlatformService } from '../../../shared/global-shared.interface';
@@ -10,6 +9,7 @@ import { SyncService } from '../../../shared/sync/sync.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingService } from '../../../shared/working/working.service';
 import { RoutePath } from '../../app.enum';
+import angular from 'angular';
 
 export abstract class AppHelperService {
   Strings = require('../../../../../res/strings/en.json');

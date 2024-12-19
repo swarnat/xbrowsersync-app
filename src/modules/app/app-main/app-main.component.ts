@@ -1,5 +1,4 @@
 import './app-main.component.scss';
-import { OnInit } from 'angular-ts-decorators';
 import { AlertService } from '../../shared/alert/alert.service';
 import { BookmarkHelperService } from '../../shared/bookmark/bookmark-helper/bookmark-helper.service.js';
 import { PlatformService } from '../../shared/global-shared.interface';
@@ -11,6 +10,7 @@ import { UtilityService } from '../../shared/utility/utility.service';
 import { WorkingService } from '../../shared/working/working.service';
 import { RoutePath } from '../app.enum';
 import { AppHelperService } from '../shared/app-helper/app-helper.service';
+import { OnInit } from 'angular-ts-decorators';
 
 export abstract class AppMainComponent implements OnInit {
   Strings = require('../../../../res/strings/en.json');

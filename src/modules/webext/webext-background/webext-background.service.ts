@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import browser, { Alarms, Downloads, Notifications } from 'webextension-polyfill';
 import { Alert } from '../../shared/alert/alert.interface';
 import { AlertService } from '../../shared/alert/alert.service';
 import { BackupRestoreService } from '../../shared/backup-restore/backup-restore.service';
@@ -34,6 +30,10 @@ import {
   Message,
   SyncBookmarksMessage
 } from '../webext.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import browser, { Alarms, Downloads, Notifications } from 'webextension-polyfill';
 
 @Injectable('WebExtBackgroundService')
 export class WebExtBackgroundService {

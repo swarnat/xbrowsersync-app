@@ -1,7 +1,7 @@
-import { Injectable } from 'angular-ts-decorators';
 import { Bookmark, BookmarkService } from '../../../shared/bookmark/bookmark.interface';
 import { BookmarkHelperService } from '../../../shared/bookmark/bookmark-helper/bookmark-helper.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('BookmarkService')
 export class AndroidBookmarkService implements BookmarkService {

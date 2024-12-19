@@ -1,5 +1,3 @@
-import { Injectable } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AppHelperService } from '../../../../app/shared/app-helper/app-helper.service';
 import { Bookmark } from '../../../../shared/bookmark/bookmark.interface';
 import { ExceptionHandler } from '../../../../shared/errors/errors.interface';
@@ -10,6 +8,8 @@ import { SyncService } from '../../../../shared/sync/sync.service';
 import { UtilityService } from '../../../../shared/utility/utility.service';
 import { WorkingService } from '../../../../shared/working/working.service';
 import { AndroidPlatformService } from '../../../android-shared/android-platform/android-platform.service';
+import { Injectable } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Injectable('AppHelperService')
 export class AndroidAppHelperService extends AppHelperService {

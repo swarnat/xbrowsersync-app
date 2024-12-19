@@ -1,5 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
 import { ApiSyncInfo } from '../api/api.interface';
 import { Bookmark } from '../bookmark/bookmark.interface';
 import { BookmarkHelperService } from '../bookmark/bookmark-helper/bookmark-helper.service';
@@ -32,6 +30,8 @@ import { UtilityService } from '../utility/utility.service';
 import { BookmarkSyncProviderService } from './bookmark-sync-provider/bookmark-sync-provider.service';
 import { SyncType } from './sync.enum';
 import { RemovedSync, Sync, SyncProvider } from './sync.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('SyncService')
 export class SyncService {

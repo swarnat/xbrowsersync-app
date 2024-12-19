@@ -1,7 +1,7 @@
-import { Component, OnInit } from 'angular-ts-decorators';
 import Globals from '../../shared/global-shared.constants';
 import { UtilityService } from '../../shared/utility/utility.service';
 import { RoutePath } from '../app.enum';
+import { Component, OnInit } from 'angular-ts-decorators';
 
 @Component({
   controllerAs: 'vm',

@@ -1,5 +1,3 @@
-import { Component } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { BackupRestoreService } from '../../shared/backup-restore/backup-restore.service';
 import { PlatformService } from '../../shared/global-shared.interface';
 import { StoreKey } from '../../shared/store/store.enum';
@@ -7,6 +5,8 @@ import { StoreService } from '../../shared/store/store.service';
 import { RemovedSync } from '../../shared/sync/sync.interface';
 import { UtilityService } from '../../shared/utility/utility.service';
 import { AppHelperService } from '../shared/app-helper/app-helper.service';
+import { Component } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 /**
  * Panel that is displayed when the active sync is not found or has been removed by the service.

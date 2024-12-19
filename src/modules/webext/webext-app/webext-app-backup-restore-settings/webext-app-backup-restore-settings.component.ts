@@ -1,10 +1,10 @@
-import angular from 'angular';
-import { boundMethod } from 'autobind-decorator';
 import { BackupRestoreSettingsComponent } from '../../../app/app-settings/backup-restore-settings/backup-restore-settings.component';
 import { AutoBackUpSchedule } from '../../../shared/backup-restore/backup-restore.interface';
 import { MessageCommand } from '../../../shared/global-shared.enum';
 import { WebExtPlatformService } from '../../shared/webext-platform/webext-platform.service';
 import { EnableAutoBackUpMessage } from '../../webext.interface';
+import angular from 'angular';
+import { boundMethod } from 'autobind-decorator';
 
 interface AutoBackUpFormController extends ng.IFormController {
   autoBackUpAtHour: any;

@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
-import { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 import { BookmarkSearchResult } from '../../../app/app-search/app-search.interface';
 import { CryptoService } from '../../crypto/crypto.service';
 import { BookmarkNotFoundError, HttpRequestAbortedError } from '../../errors/errors';
@@ -11,6 +8,9 @@ import { StoreService } from '../../store/store.service';
 import { UtilityService } from '../../utility/utility.service';
 import { BookmarkContainer, BookmarkType } from '../bookmark.enum';
 import { Bookmark, BookmarkMetadata, BookmarkSearchQuery } from '../bookmark.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
+import { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 
 @Injectable('BookmarkHelperService')
 export class BookmarkHelperService {

@@ -1,11 +1,11 @@
-import angular from 'angular';
-import { Component } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AlertType } from '../../../shared/alert/alert.enum';
 import { Alert } from '../../../shared/alert/alert.interface';
 import { AlertService } from '../../../shared/alert/alert.service';
 import { PlatformService } from '../../../shared/global-shared.interface';
 import { UtilityService } from '../../../shared/utility/utility.service';
+import angular from 'angular';
+import { Component } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

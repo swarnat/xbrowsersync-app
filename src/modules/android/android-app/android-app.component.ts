@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AppEventType, RoutePath } from '../../app/app.enum';
 import { AppMainComponent } from '../../app/app-main/app-main.component';
 import { AppHelperService } from '../../app/shared/app-helper/app-helper.service';
@@ -23,6 +20,9 @@ import { WorkingService } from '../../shared/working/working.service';
 import { AndroidPlatformService } from '../android-shared/android-platform/android-platform.service';
 import { AndroidAlert } from './android-app.interface';
 import { AndroidAppHelperService } from './shared/android-app-helper/android-app-helper.service';
+import angular from 'angular';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

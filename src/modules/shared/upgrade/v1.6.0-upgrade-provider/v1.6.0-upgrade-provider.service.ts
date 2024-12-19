@@ -1,4 +1,3 @@
-import angular from 'angular';
 import { BookmarkContainer } from '../../bookmark/bookmark.enum';
 import { Bookmark } from '../../bookmark/bookmark.interface';
 import { BookmarkHelperService } from '../../bookmark/bookmark-helper/bookmark-helper.service';
@@ -8,6 +7,7 @@ import { StoreKey } from '../../store/store.enum';
 import { StoreService } from '../../store/store.service';
 import { UtilityService } from '../../utility/utility.service';
 import { UpgradeProvider } from '../upgrade.interface';
+import angular from 'angular';
 
 export abstract class V160UpgradeProviderService implements UpgradeProvider {
   $q: ng.IQService;

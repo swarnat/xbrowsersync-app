@@ -1,5 +1,3 @@
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { ApiServiceType } from '../../../shared/api/api.enum';
 import { ApiSyncInfo } from '../../../shared/api/api.interface';
 import { PlatformService } from '../../../shared/global-shared.interface';
@@ -10,6 +8,8 @@ import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingService } from '../../../shared/working/working.service';
 import { AppEventType, RoutePath } from '../../app.enum';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

@@ -1,10 +1,10 @@
-import angular from 'angular';
-import { NgModule } from 'angular-ts-decorators';
 import { WebExtAppModule } from '../../webext-app/webext-app.module';
 import { ChromiumBookmarkService } from '../shared/chromium-bookmark/chromium-bookmark.service';
 import { ChromiumPlatformService } from '../shared/chromium-platform/chromium-platform.service';
 import { ChromiumAppBackupRestoreSettingsComponent } from './chromium-app-backup-restore-settings/chromium-app-backup-restore-settings.component';
 import { ChromiumAppHelperService } from './shared/chromium-app-helper/chromium-app-helper.service';
+import angular from 'angular';
+import { NgModule } from 'angular-ts-decorators';
 
 @NgModule({
   declarations: [ChromiumAppBackupRestoreSettingsComponent],

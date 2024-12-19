@@ -1,5 +1,3 @@
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { PlatformService } from '../../../shared/global-shared.interface';
 import { AllSettings } from '../../../shared/settings/settings.interface';
 import { SettingsService } from '../../../shared/settings/settings.service';
@@ -7,6 +5,8 @@ import { SyncType } from '../../../shared/sync/sync.enum';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingService } from '../../../shared/working/working.service';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

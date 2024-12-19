@@ -1,4 +1,3 @@
-import { Injectable } from 'angular-ts-decorators';
 import {
   BaseError,
   HttpRequestAbortedError,
@@ -6,6 +5,7 @@ import {
   HttpRequestTimedOutError,
   NetworkConnectionError
 } from '../errors/errors';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('NetworkService')
 export class NetworkService {

@@ -1,11 +1,11 @@
-import angular from 'angular';
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AppMainComponent } from '../../app/app-main/app-main.component';
 import { SyncType } from '../../shared/sync/sync.enum';
 import { Sync } from '../../shared/sync/sync.interface';
 import { WorkingContext } from '../../shared/working/working.enum';
 import { WebExtPlatformService } from '../shared/webext-platform/webext-platform.service';
+import angular from 'angular';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

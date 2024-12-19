@@ -4,6 +4,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = (env, argv) => {
   const devMode = argv.mode === 'development';
+
   const createBundleReport = false;
   return {
     devtool: devMode ? 'inline-source-map' : 'source-map',
@@ -57,27 +58,27 @@ module.exports = (env, argv) => {
         }
       ]
     },
-    optimization: !devMode
-      ? {
-          minimizer: [
+    optimization: {
+      minimizer: !devMode
+        ? [
             new TerserPlugin({
               parallel: true,
               terserOptions: {
                 keep_classnames: true
               }
             })
-          ],
-          splitChunks: {
-            cacheGroups: {
-              vendor: {
-                chunks: 'all',
-                name: 'vendor',
-                test: /node_modules/
-              }
-            }
+          ]
+        : [],
+      splitChunks: {
+        cacheGroups: {
+          vendor: {
+            chunks: 'all',
+            name: 'vendor',
+            test: /node_modules/
           }
         }
-      : {},
+      }
+    },
     output: {
       chunkFilename: '[name].js',
       clean: true,

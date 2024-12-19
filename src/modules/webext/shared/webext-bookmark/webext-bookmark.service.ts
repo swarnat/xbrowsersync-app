@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { boundMethod } from 'autobind-decorator';
-import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 import { BookmarkChangeType, BookmarkContainer, BookmarkType } from '../../../shared/bookmark/bookmark.enum';
 import {
   AddNativeBookmarkChangeData,
@@ -38,6 +35,9 @@ import { SyncService } from '../../../shared/sync/sync.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { BookmarkIdMapping } from '../bookmark-id-mapper/bookmark-id-mapper.interface';
 import { BookmarkIdMapperService } from '../bookmark-id-mapper/bookmark-id-mapper.service';
+import angular from 'angular';
+import { boundMethod } from 'autobind-decorator';
+import browser, { Bookmarks as NativeBookmarks } from 'webextension-polyfill';
 
 export abstract class WebExtBookmarkService implements BookmarkService {
   $injector: ng.auto.IInjectorService;

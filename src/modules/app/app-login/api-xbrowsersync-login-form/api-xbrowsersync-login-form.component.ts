@@ -1,6 +1,3 @@
-import { Component, OnInit, Output } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import * as countriesList from 'countries-list';
 import { ApiServiceStatus, ApiServiceType } from '../../../shared/api/api.enum';
 import {
   ApiXbrowsersyncServiceInfo,
@@ -19,6 +16,9 @@ import { UtilityService } from '../../../shared/utility/utility.service';
 import { WorkingService } from '../../../shared/working/working.service';
 import { RoutePath } from '../../app.enum';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import { Component, OnInit, Output } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import * as countriesList from 'countries-list';
 
 @Component({
   controllerAs: 'vm',

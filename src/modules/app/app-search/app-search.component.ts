@@ -1,7 +1,4 @@
 import './app-search.component.scss';
-import angular, { IScope } from 'angular';
-import { OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AndroidAppHelperService } from '../../android/android-app/shared/android-app-helper/android-app-helper.service';
 import { AlertService } from '../../shared/alert/alert.service';
 import { Bookmark, BookmarkSearchQuery } from '../../shared/bookmark/bookmark.interface';
@@ -15,6 +12,9 @@ import { WorkingService } from '../../shared/working/working.service';
 import { KeyCode, RoutePath } from '../app.enum';
 import { AppHelperService } from '../shared/app-helper/app-helper.service';
 import { BookmarkSearchResult, BookmarkTreeItem } from './app-search.interface';
+import angular, { IScope } from 'angular';
+import { OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 export abstract class AppSearchComponent implements OnInit {
   Strings = require('../../../../res/strings/en.json');

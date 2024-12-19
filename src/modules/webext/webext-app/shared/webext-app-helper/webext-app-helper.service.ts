@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { boundMethod } from 'autobind-decorator';
-import browser from 'webextension-polyfill';
 import { AppHelperService } from '../../../../app/shared/app-helper/app-helper.service';
 import { BookmarkHelperService } from '../../../../shared/bookmark/bookmark-helper/bookmark-helper.service';
 import { ExceptionHandler } from '../../../../shared/errors/errors.interface';
@@ -13,6 +10,9 @@ import { SyncService } from '../../../../shared/sync/sync.service';
 import { UtilityService } from '../../../../shared/utility/utility.service';
 import { WorkingService } from '../../../../shared/working/working.service';
 import { WebExtPlatformService } from '../../../shared/webext-platform/webext-platform.service';
+import angular from 'angular';
+import { boundMethod } from 'autobind-decorator';
+import browser from 'webextension-polyfill';
 
 export abstract class WebExtAppHelperService extends AppHelperService {
   $filter: ng.FilterFactory;

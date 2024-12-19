@@ -1,5 +1,3 @@
-import { Component, OnDestroy, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { ApiSyncInfo } from '../../../shared/api/api.interface';
 import { AndroidError, FailedScanError, InvalidSyncInfoError } from '../../../shared/errors/errors';
 import Globals from '../../../shared/global-shared.constants';
@@ -9,6 +7,8 @@ import { StoreKey } from '../../../shared/store/store.enum';
 import { StoreService } from '../../../shared/store/store.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { AndroidAppHelperService } from '../shared/android-app-helper/android-app-helper.service';
+import { Component, OnDestroy, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

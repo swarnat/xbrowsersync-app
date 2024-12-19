@@ -1,5 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
 import { Bookmark } from '../bookmark/bookmark.interface';
 import { SyncVersionNotSupportedError, UpgradeFailedError } from '../errors/errors';
 import { PlatformService } from '../global-shared.interface';
@@ -9,6 +7,8 @@ import { StoreService } from '../store/store.service';
 import { UtilityService } from '../utility/utility.service';
 import { UpgradeProvider } from './upgrade.interface';
 import { V160UpgradeProviderService } from './v1.6.0-upgrade-provider/v1.6.0-upgrade-provider.service';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('UpgradeService')
 export class UpgradeService {

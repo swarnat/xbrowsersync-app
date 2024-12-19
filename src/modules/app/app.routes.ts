@@ -1,8 +1,8 @@
-import NgRoute from 'angular-route';
-import { NgModule } from 'angular-ts-decorators';
 import { AppController } from './app.controller';
 import { RoutePath } from './app.enum';
 import { SyncEnabledController } from './sync-enabled.controller';
+import NgRoute from 'angular-route';
+import { NgModule } from 'angular-ts-decorators';
 
 @NgModule({
   id: 'AppRoutesModule',

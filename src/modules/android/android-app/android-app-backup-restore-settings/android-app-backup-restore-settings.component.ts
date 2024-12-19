@@ -1,5 +1,5 @@
-import { Component } from 'angular-ts-decorators';
 import { BackupRestoreSettingsComponent } from '../../../app/app-settings/backup-restore-settings/backup-restore-settings.component';
+import { Component } from 'angular-ts-decorators';
 
 @Component({
   controllerAs: 'vm',

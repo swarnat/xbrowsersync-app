@@ -1,5 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
 import { BookmarkChangeType, BookmarkContainer } from '../../bookmark/bookmark.enum';
 import {
   AddBookmarkChangeData,
@@ -23,6 +21,8 @@ import { UpgradeService } from '../../upgrade/upgrade.service';
 import { UtilityService } from '../../utility/utility.service';
 import { SyncType } from '../sync.enum';
 import { ProcessSyncResult, Sync, SyncProvider } from '../sync.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('BookmarkSyncProviderService')
 export class BookmarkSyncProviderService implements SyncProvider {

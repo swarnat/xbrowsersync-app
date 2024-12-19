@@ -1,5 +1,3 @@
-import angular from 'angular';
-import { Injectable } from 'angular-ts-decorators';
 import { ApiSyncInfo } from '../api/api.interface';
 import { ApiXbrowsersyncSyncInfo } from '../api/api-xbrowsersync/api-xbrowsersync.interface';
 import { Bookmark, BookmarkService } from '../bookmark/bookmark.interface';
@@ -13,6 +11,8 @@ import { SyncType } from '../sync/sync.enum';
 import { UpgradeService } from '../upgrade/upgrade.service';
 import { UtilityService } from '../utility/utility.service';
 import { AutoBackUpSchedule, Backup } from './backup-restore.interface';
+import angular from 'angular';
+import { Injectable } from 'angular-ts-decorators';
 
 @Injectable('BackupRestoreService')
 export class BackupRestoreService {

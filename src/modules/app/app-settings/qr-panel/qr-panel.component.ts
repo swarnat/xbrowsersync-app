@@ -1,6 +1,3 @@
-import { Component, OnInit, Output } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import QRCode from 'qrcode-svg';
 import { ApiSyncInfo } from '../../../shared/api/api.interface';
 import { BackupRestoreService } from '../../../shared/backup-restore/backup-restore.service';
 import { PlatformService } from '../../../shared/global-shared.interface';
@@ -8,6 +5,9 @@ import { StoreKey } from '../../../shared/store/store.enum';
 import { StoreService } from '../../../shared/store/store.service';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
+import { Component, OnInit, Output } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import QRCode from 'qrcode-svg';
 
 @Component({
   controllerAs: 'vm',

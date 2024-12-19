@@ -1,8 +1,8 @@
+import { PlatformType } from '../../../../shared/global-shared.enum';
+import { WebExtPlatformService } from '../../../shared/webext-platform/webext-platform.service';
 import { Injectable } from 'angular-ts-decorators';
 import { boundMethod } from 'autobind-decorator';
 import browser from 'webextension-polyfill';
-import { PlatformType } from '../../../../shared/global-shared.enum';
-import { WebExtPlatformService } from '../../../shared/webext-platform/webext-platform.service';
 
 @Injectable('PlatformService')
 export class FirefoxPlatformService extends WebExtPlatformService {

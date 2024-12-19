@@ -1,5 +1,4 @@
 // eslint-disable-next-line unused-imports/no-unused-imports-ts
-import stackTrace from 'stacktrace-js';
 import { $injector, $log, $q } from '../../../test/mock-services';
 import { BaseError } from '../errors/errors';
 import { StoreKey } from '../store/store.enum';
@@ -7,6 +6,7 @@ import { TraceLogItem } from '../store/store.interface';
 import { StoreService } from '../store/store.service';
 import { LogLevel } from './log.enum';
 import { LogService } from './log.service';
+import stackTrace from 'stacktrace-js';
 
 jest.mock('stacktrace-js', () => {
   return {

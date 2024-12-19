@@ -1,6 +1,3 @@
-import angular from 'angular';
-import { Component, OnInit } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
 import { AndroidAppHelperService } from '../../android/android-app/shared/android-app-helper/android-app-helper.service';
 import { AlertType } from '../../shared/alert/alert.enum';
 import { AlertService } from '../../shared/alert/alert.service';
@@ -23,6 +20,9 @@ import { WorkingService } from '../../shared/working/working.service';
 import { KeyCode, RoutePath } from '../app.enum';
 import { AppHelperService } from '../shared/app-helper/app-helper.service';
 import { BookmarkRouteParams } from './app-bookmark.interface';
+import angular from 'angular';
+import { Component, OnInit } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
 
 @Component({
   controllerAs: 'vm',

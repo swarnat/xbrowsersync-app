@@ -1,4 +1,3 @@
-import { Component, Input, Output } from 'angular-ts-decorators';
 import { BookmarkType } from '../../../shared/bookmark/bookmark.enum';
 import { Bookmark } from '../../../shared/bookmark/bookmark.interface';
 import { BookmarkHelperService } from '../../../shared/bookmark/bookmark-helper/bookmark-helper.service';
@@ -6,6 +5,7 @@ import { PlatformService } from '../../../shared/global-shared.interface';
 import { UtilityService } from '../../../shared/utility/utility.service';
 import { AppHelperService } from '../../shared/app-helper/app-helper.service';
 import { BookmarkTreeItem } from '../app-search.interface';
+import { Component, Input, Output } from 'angular-ts-decorators';
 
 @Component({
   controllerAs: 'vm',

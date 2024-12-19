@@ -1,7 +1,3 @@
-import angular from 'angular';
-import { Component, OnDestroy } from 'angular-ts-decorators';
-import { boundMethod } from 'autobind-decorator';
-import PullToRefresh from 'pulltorefreshjs';
 import { AppEventType } from '../../../app/app.enum';
 import { AppSearchComponent } from '../../../app/app-search/app-search.component';
 import { AppHelperService } from '../../../app/shared/app-helper/app-helper.service';
@@ -21,6 +17,10 @@ import { WorkingService } from '../../../shared/working/working.service';
 import { AndroidPlatformService } from '../../android-shared/android-platform/android-platform.service';
 import { AndroidAlert } from '../android-app.interface';
 import { AndroidAppHelperService } from '../shared/android-app-helper/android-app-helper.service';
+import angular from 'angular';
+import { Component, OnDestroy } from 'angular-ts-decorators';
+import { boundMethod } from 'autobind-decorator';
+import PullToRefresh from 'pulltorefreshjs';
 
 @Component({
   controllerAs: 'vm',
