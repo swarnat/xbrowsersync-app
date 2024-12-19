@@ -72,7 +72,7 @@ module.exports = (env, argv) => {
       splitChunks: {
         cacheGroups: {
           vendor: {
-            chunks: 'all',
+            chunks: (chunk) => chunk.name !== 'service-worker',
             name: 'vendor',
             test: /node_modules/
           }

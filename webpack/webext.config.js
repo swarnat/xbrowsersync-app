@@ -39,7 +39,8 @@ module.exports = (env, argv) => {
           type: 'var',
           export: 'default'
         }
-      }
+      },
+      'service-worker': './src/modules/webext/webext-background/service-worker.ts'
     },
     plugins: [
       ...baseConfig.plugins,

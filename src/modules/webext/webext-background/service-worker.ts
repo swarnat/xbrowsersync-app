@@ -337,7 +337,7 @@ async function initialize(): Promise<void> {
 
   // Update browser action icon
   await browser.action.setIcon({
-    path: syncEnabled ? 'assets/synced.png' : 'assets/notsynced.png'
+    path: syncEnabled ? 'synced.png' : 'notsynced.png'
   });
 
   // Check for updates if sync is enabled
@@ -352,4 +352,10 @@ async function initialize(): Promise<void> {
 }
 
 // Start initialization
-initialize().catch(console.error);
+console.log('Attempting to initialize service worker');
+initialize()
+  .then(() => console.log('Service worker initialized successfully'))
+  .catch((err) => {
+    console.error('Service worker initialization failed:', err);
+    console.error('Error stack:', err.stack);
+  });
